@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "MySpecs"
   s.version      = "0.0.1"
-  s.summary      = "A short description of MySpecs."
+  s.summary      = "A short description."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  "实验的库 测试"
                    DESC
 
-  s.homepage     = "http://EXAMPLE/MySpecs"
+  s.homepage     = "https://github.com/wuxiaopei/MySpecs"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +39,11 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+#  s.license      = "MIT (example)"
+   s.license      = { :type => "MIT", :text => <<-LICENSE
+   Copyright © 2016年 wupei. All rights reserved.
+   LICENSE
+ }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +83,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/MySpecs.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/wuxiaopei/MySpecs.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
